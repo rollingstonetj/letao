@@ -57,11 +57,11 @@ $(function () {
         success:function(info){
           // console.log(info);
           if(info.error === 1000){
-            // 用户名不能为空
+            // 用户名不能为空   4 登录信息提示信息
             $("form").data("bootstrapValidator").updateStatus("username","INVALID","callback");
           }
           if(info.error === 1001){
-            // alert("密码错误");
+            // alert("密码错误");    4 登录信息提示信息
             $("form").data("bootstrapValidator").updateStatus("password","INVALID","callback");
           }
           if(info.success){
@@ -77,14 +77,5 @@ $(function () {
     // reset只能清除form表单中的内容，清除不了   点击重置按钮要把样式和内容都清空
     $("form").data('bootstrapValidator').resetForm(true);
   });
-
-  //4.登录信息提示按钮
-
-
-
-
-
-
-
 
 });

@@ -4,3 +4,117 @@
 .mt_150{
   margin-top: 150px;
 }
+body,html{
+  height: 100%;
+}
+
+body{
+  padding-left: 180px;
+  transition: all 1s;
+}
+
+body.active{
+  padding-left: 0;
+}
+
+ul,ol{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active
+{
+  text-decoration: none;
+}
+.lt_aside{
+  width: 180px;
+  height: 100%;
+  background: #222d32;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+.lt_aside.active{
+ left:  -180px;
+}
+.lt_aside .brand {
+  margin-bottom: 30px;
+}
+.lt_aside .brand a{
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background: #367fa9;
+}
+.lt_aside .user img{
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.lt_aside .user p{
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.lt_aside .nav li{
+  border: 3px solid  transparent;
+}
+.lt_aside .nav a{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  padding-left: 30px;
+  color: #fff;
+  
+}
+.lt_aside .nav a.active{
+  border-left: 3px solid #367fa9 ; 
+  background: #1d1f21;
+}
+
+.lt_aside .second a{
+    padding-left: 60px;
+}
+
+.lt-main{
+  width: 100%;
+  height: 100%;
+}
+.lt-main .lt-header{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  background: #3c8dbc;
+  margin-bottom: 20px;
+}
+.lt-main .lt-header a{
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.lt-content .charts_left,.charts_right{
+  width: 45%;
+}
+
+.charts_left,.charts_right{
+  height: 500px;
+}
+
+
+
+
+
