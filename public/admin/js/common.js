@@ -14,10 +14,8 @@
     setInterval(function(){
       NProgress.done();
     },500);
-  
   });
 
-  
   // 控制二级菜单的显示与隐藏
   $(".second").prev().on("click",function(){
     $(this).next().slideToggle();
@@ -30,6 +28,7 @@
   
   //给退出按钮注册事件
   $(".btn_logout").on("click", function () {
+    console.log("haha");
     
     //先发送ajax请求，告诉服务，我要退出，服务告诉你退出成功了，再跳转到login页面
     $.ajax({
