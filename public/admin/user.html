@@ -141,11 +141,11 @@
   <script type="text/html" id="tpl">
     {{each rows v i}}
     <tr>
-        <td>{{  (page-1) * size + i + 1}}</td>
-        <td>{{v.username}}</td>
-        <td>{{v.mobile}}</td>
-        <td>{{v.isDelete == "1" ? "正常" : "禁用"}}</td>
-        <td data-id="{{v.id}}">
+        <td width="10%">{{  (page-1) * size + i + 1}}</td>
+        <td width="30%">{{v.username}}</td>
+        <td width="30%">{{v.mobile}}</td>
+        <td width="20%">{{v.isDelete == "1" ? "正常" : "禁用"}}</td>
+        <td width="10%" data-id="{{v.id}}">
           {{if v.isDelete == "1"}}
             <button data-isDelete={{0}} class="btn btn-danger btn-sm">禁用</button>
           {{else}}
@@ -154,13 +154,7 @@
         </td>                
     </tr>
     {{/each}}
-  
   </script>
-
-
-
-
-
   <script src="./lib/jquery/jquery.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.js"></script>
   <script src="./lib/bootstrap-validator/js/bootstrapValidator.js"></script>
